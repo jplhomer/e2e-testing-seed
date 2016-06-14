@@ -14,6 +14,7 @@ module.exports = {
       .submitForm('#commentform')
       .pause(1000)
       .assert.elementPresent('.comment-content')
-      .assert.containsText('.comment-list li:last-child .comment-content', myText);
+      .assert.containsText('.comment-list li:last-child .comment-content', myText)
+      .end();
   }
 };
